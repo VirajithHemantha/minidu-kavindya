@@ -11,19 +11,12 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [showContent, setShowContent] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
-  const audioRef = useRef<HTMLAudioElement>(null);
 
   const handleEnvelopeClick = () => {
     if (isAnimating || isOpen) return;
 
     setIsAnimating(true);
     setIsOpen(true);
-
-    if (audioRef.current) {
-      audioRef.current.play().catch((err) => {
-        console.log('Audio play failed:', err);
-      });
-    }
 
     setTimeout(() => {
       setShowContent(true);
@@ -431,10 +424,6 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
             </motion.div>
           </div>
 
-          {/* Hidden audio */}
-          <audio ref={audioRef} preload="none" loop>
-            <source src="/audio/wedding-music.mp3" type="audio/mpeg" />
-          </audio>
         </motion.section>
       )}
     </AnimatePresence>
