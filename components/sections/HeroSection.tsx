@@ -109,10 +109,10 @@ export default function HeroSection() {
             </motion.div>
 
             {/* Title */}
-            <h1 className="flex flex-col md:flex-row items-center justify-center gap-1 md:gap-8 font-serif text-[#4a3b3c] mb-4 md:mb-8 text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] leading-tight md:leading-none tracking-tight">
-              <span className="block pr-0 md:pr-2">Shashini</span>
-              <div className="relative flex items-center justify-center w-12 h-12 md:w-28 md:h-28 my-1 md:my-0">
-                <span className="absolute z-10 text-[#ff4d6d] text-3xl sm:text-5xl md:text-7xl lg:text-[6rem] xl:text-[7rem] italic">&amp;</span>
+            <h1 className="flex flex-col md:flex-row items-center justify-center gap-1 md:gap-4 font-serif text-[#4a3b3c] mb-2 md:mb-4 text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight md:leading-none tracking-tight">
+              <span className="block pr-0 md:pr-1">Shashini</span>
+              <div className="relative flex items-center justify-center w-10 h-10 md:w-20 md:h-20 my-0.5 md:my-0">
+                <span className="absolute z-10 text-[#ff4d6d] text-2xl sm:text-4xl md:text-5xl lg:text-6xl italic">&amp;</span>
                 {/* Rotating decorative sunburst */}
                 <motion.svg
                   animate={{ rotate: 360 }}
@@ -123,10 +123,10 @@ export default function HeroSection() {
                   <path d="M50 0 L55 40 L100 50 L55 60 L50 100 L45 60 L0 50 L45 40 Z" fill="currentColor" />
                 </motion.svg>
               </div>
-              <span className="block pl-0 md:pl-2">Madhawa</span>
+              <span className="block pl-0 md:pl-1">Madhawa</span>
             </h1>
 
-            <p className="text-sm sm:text-base md:text-lg text-[#857274] font-medium tracking-wide max-w-2xl mx-auto px-4 sm:px-6 leading-relaxed line-clamp-2">
+            <p className="text-xs sm:text-sm md:text-base text-[#857274] font-medium tracking-wide max-w-xl mx-auto px-4 sm:px-6 leading-relaxed">
               A magical celebration of love, <br className="hidden sm:block" />laughter, and our happily ever after.
             </p>
           </motion.div>
@@ -142,7 +142,7 @@ export default function HeroSection() {
             animate={inView ? { opacity: 1, x: 0, rotateY: 0, rotateZ: -6, scale: 1 } : {}}
             transition={{ duration: 1.4, delay: 0.4, type: "spring", bounce: 0.4 }}
             whileHover={{ scale: 1.05, rotateZ: -3, zIndex: 40 }}
-            className="absolute left-[-1%] sm:left-[5%] md:left-[5%] lg:left-[5%] top-[8%] sm:top-[15%] w-20 sm:w-40 md:w-64 lg:w-[22rem] aspect-[3/4] rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-[0_15px_30px_rgba(255,143,163,0.3)] border-[3px] sm:border-[4px] md:border-[10px] border-white/90 bg-white z-10"
+            className="absolute left-[2%] sm:left-[5%] top-[10%] w-16 sm:w-32 md:w-48 lg:w-64 aspect-[3/4] rounded-[1rem] md:rounded-[2rem] overflow-hidden shadow-[0_15px_30px_rgba(255,143,163,0.3)] border-[2px] sm:border-[4px] md:border-[8px] border-white/90 bg-white z-10"
           >
             <div className="relative w-full h-full rounded-[1.2rem] md:rounded-[2rem] overflow-hidden">
               <Image
@@ -165,7 +165,7 @@ export default function HeroSection() {
             animate={inView ? { opacity: 1, x: 0, rotateY: 0, rotateZ: 6, scale: 1 } : {}}
             transition={{ duration: 1.4, delay: 0.6, type: "spring", bounce: 0.4 }}
             whileHover={{ scale: 1.05, rotateZ: 3, zIndex: 40 }}
-            className="absolute right-[-1%] sm:right-[5%] md:right-[5%] lg:right-[5%] bottom-[6%] sm:bottom-[10%] md:bottom-[15%] w-20 sm:w-40 md:w-64 lg:w-[22rem] aspect-[3/4] rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-[0_15px_30px_rgba(255,143,163,0.3)] border-[3px] sm:border-[4px] md:border-[10px] border-white/90 bg-white z-10"
+            className="absolute right-[2%] sm:right-[5%] bottom-[10%] w-16 sm:w-32 md:w-48 lg:w-64 aspect-[3/4] rounded-[1rem] md:rounded-[2rem] overflow-hidden shadow-[0_15px_30px_rgba(255,143,163,0.3)] border-[2px] sm:border-[4px] md:border-[8px] border-white/90 bg-white z-10"
           >
             <div className="relative w-full h-full rounded-[1.2rem] md:rounded-[2rem] overflow-hidden">
               <Image
@@ -190,7 +190,7 @@ export default function HeroSection() {
             whileHover={{ scale: 1.02, zIndex: 50 }}
             className="relative z-30 flex flex-col items-center"
           >
-            <div className="relative w-[280px] sm:w-72 md:w-[28rem] lg:w-[32rem] aspect-[4/5] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-[0_20px_40px_rgba(255,77,109,0.2)] md:shadow-[0_30px_60px_rgba(255,77,109,0.25)] border-[6px] md:border-[14px] border-white/95 bg-white backdrop-blur-md">
+            <div className="relative w-[240px] sm:w-64 md:w-[22rem] lg:w-[26rem] aspect-[4/5] rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-[0_20px_40px_rgba(255,77,109,0.2)] md:shadow-[0_30px_60px_rgba(255,77,109,0.25)] border-[5px] md:border-[10px] border-white/90 bg-white backdrop-blur-md">
               <div className="relative w-full h-full rounded-[1.5rem] md:rounded-[2rem] overflow-hidden bg-[#ffeaed]">
                 <Image
                   src="/bride_couple.webp"
@@ -223,11 +223,11 @@ export default function HeroSection() {
       </div>
 
       {/* Magical Bottom Transition into the Next Section */}
-      <div className="absolute bottom-0 left-0 w-full h-32 md:h-48 bg-gradient-to-t from-[#faf7f2] to-transparent z-20 pointer-events-none flex items-end justify-center pb-8">
+      <div className="absolute bottom-0 left-0 w-full h-16 md:h-24 bg-gradient-to-t from-[#faf7f2] to-transparent z-20 pointer-events-none flex items-end justify-center pb-4">
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          className="w-[3px] h-16 rounded-full bg-gradient-to-b from-[#ffb3c1] to-transparent"
+          className="w-[3px] h-10 rounded-full bg-gradient-to-b from-[#ffb3c1] to-transparent"
         />
       </div>
 

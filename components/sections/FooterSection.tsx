@@ -114,11 +114,16 @@ export default function FooterSection() {
         </motion.div>
 
         {/* Copyright */}
-        <div className="flex flex-col md:flex-row items-center justify-between text-[#f5e6c8]/40 text-xs font-light tracking-[0.1em] px-4">
-          <p className="mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Shashini & Madhawa. All rights reserved.
-          </p>
-          <p className="flex items-center gap-1.5">
+        <div className="flex flex-col md:flex-row items-center justify-between text-[#f5e6c8]/40 text-xs font-light tracking-[0.1em] px-4 text-center md:text-left">
+          <div className="mb-4 md:mb-0 space-y-2">
+            <p>
+              &copy; {new Date().getFullYear()} Shashini & Madhawa. All rights reserved.
+            </p>
+            <p>
+              Design and created by <span className="text-[#C9A227]">InviteMint</span> | Connect WhatsApp: <a href="https://wa.me/94707819074" target="_blank" rel="noopener noreferrer" className="text-[#C9A227] hover:underline">+94 70 781 9074</a>
+            </p>
+          </div>
+          <p className="flex items-center justify-center gap-1.5">
             Crafted with <Heart className="h-3 w-3 fill-current text-[#C9A227] animate-pulse" /> for our special day
           </p>
         </div>

@@ -81,7 +81,7 @@ export default function CeremonyDetails() {
                 {/* Elegant overlay gradient to blend bottom */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1a0408] via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-0 left-0 w-full p-8 text-center text-[#f5e6c8]">
-                  <p className="font-serif text-2xl tracking-widest text-[#C9A227]">A & S</p>
+                  <p className="font-serif text-2xl tracking-widest text-[#C9A227]">S & M</p>
                 </div>
               </div>
 
