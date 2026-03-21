@@ -19,7 +19,7 @@ export default function CeremonyDetails() {
       timeValue: '9:30 AM',
       timeSub: 'Holy wedding ceremony',
       venueLabel: 'Church Venue',
-      venueValue: "St. Sebastian's Church - Godella",
+      venueValue: "St. Joseph's Church - Gonawila",
       venueSub: 'Live location available',
     },
     {

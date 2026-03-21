@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, MapPin, Navigation, Sparkles } from 'lucide-react';
 
-const LIVE_LOCATION_URL = 'https://maps.app.goo.gl/pmwZKctvXUn7T8pHA?g_st=iw';
+const LIVE_LOCATION_URL = 'https://maps.app.goo.gl/pikUWZebfsNYjp4i6?g_st=iw';
 const FUNCTION_LOCATION_URL = 'https://maps.app.goo.gl/hPEbCMaPZywmpFQi7';
 
 export default function VenueLocation() {
@@ -126,7 +126,7 @@ export default function VenueLocation() {
               >
                 <div>
                   <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#be7f56]">Live Location</p>
-                  <h4 className="mt-1 font-serif text-lg text-[#4d3732] sm:text-2xl">St. Sebastian's Church - Godella</h4>
+                  <h4 className="mt-1 font-serif text-lg text-[#4d3732] sm:text-2xl">St. Joseph's Church - Gonawila</h4>
                 </div>
                 <motion.div whileHover={{ scale: 1.08 }} className="flex h-11 w-11 items-center justify-center rounded-full bg-[#ca7c57] text-white shadow-md">
                   <Navigation className="h-5 w-5" />
@@ -148,11 +148,11 @@ export default function VenueLocation() {
               </div>
 
               <h3 className="font-serif text-3xl leading-tight text-[#4d3732] md:text-4xl">
-                St. Sebastian's<br />Church - Godella
+                St. Joseph's<br />Church - Gonawila
               </h3>
 
               <p className="mt-5 text-sm leading-relaxed text-[#7a6258] md:text-base">
-                We warmly invite you to join us at St. Sebastian's Church - Godella for our holy wedding ceremony.
+                We warmly invite you to join us at St. Joseph's Church - Gonawila for our holy wedding ceremony.
               </p>
 
               <a
@@ -168,7 +168,7 @@ export default function VenueLocation() {
               <div className="mt-6 rounded-2xl border border-[#ead2b9]/60 bg-white/75 p-4">
                 <p className="text-[10px] uppercase tracking-[0.2em] text-[#b78058]">Map Link</p>
                 <p className="mt-2 break-all text-xs text-[#7a6258]">
-                  maps.app.goo.gl/pmwZKctvXUn7T8pHA
+                  maps.app.goo.gl/pikUWZebfsNYjp4i6
                 </p>
               </div>
 

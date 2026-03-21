@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { Heart, MapPin, Sparkles } from 'lucide-react';
 
-const LIVE_LOCATION_URL = 'https://maps.app.goo.gl/pmwZKctvXUn7T8pHA?g_st=iw';
+const LIVE_LOCATION_URL = 'https://maps.app.goo.gl/pikUWZebfsNYjp4i6?g_st=iw';
 
 export default function FooterSection() {
   return (
@@ -46,7 +46,7 @@ export default function FooterSection() {
               className="mt-7 inline-flex items-center justify-center gap-2 self-center rounded-full border border-[#C9A227]/45 bg-white/[0.04] px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#C9A227] transition-colors hover:bg-[#C9A227]/10"
             >
               <MapPin className="h-4 w-4" />
-              St. Sebastian's Church - Godella
+              St. Joseph's Church - Gonawila
             </a>
           </motion.div>
         </div>
