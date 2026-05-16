@@ -13,24 +13,24 @@ export default function CeremonyDetails() {
 
   const detailGroups = [
     {
-      key: 'church',
-      title: 'Church',
-      timeLabel: 'Church Time',
-      timeValue: '9:30 AM',
-      timeSub: 'Holy wedding ceremony',
-      venueLabel: 'Church Venue',
-      venueValue: "St. Joseph's Church - Gonawila",
-      venueSub: 'Live location available',
+      key: 'temple',
+      title: 'Temple Ceremony',
+      timeLabel: 'Ceremony Date',
+      timeValue: 'July 02, 2026',
+      timeSub: 'Poruwa & Temple Blessing',
+      venueLabel: 'Temple Venue',
+      venueValue: 'Giritale Wawe Pansala, Giritale',
+      venueSub: 'Polonnaruwa District',
     },
     {
       key: 'function',
-      title: 'Function',
+      title: 'Night Function',
       timeLabel: 'Function Time',
-      timeValue: '11:30 AM',
-      timeSub: 'Reception and celebration',
-      venueLabel: 'Function Venue',
-      venueValue: 'Sampath Banquet Hall',
-      venueSub: 'Live location available',
+      timeValue: '6:00 PM – 11:30 PM',
+      timeSub: 'July 04, 2026',
+      venueLabel: 'Hotel Venue',
+      venueValue: 'Golden Flower Hotel',
+      venueSub: 'Airport Road, Hingurakgoda',
     },
   ];
 
@@ -86,17 +86,17 @@ export default function CeremonyDetails() {
 
               <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center text-[#f5e6c8]">
                 <div className="inline-flex items-center gap-2 rounded-full border border-[#f0d18b]/40 bg-black/25 px-4 py-1.5 backdrop-blur-sm">
-                  <Cross className="h-3.5 w-3.5 text-[#f4ddab]" />
+                  <Sparkles className="h-3.5 w-3.5 text-[#f4ddab]" />
                   <p className="text-[10px] uppercase tracking-[0.32em] text-[#f6dd9a] drop-shadow-[0_2px_10px_rgba(0,0,0,0.65)]">Blessed Union</p>
                 </div>
                 <h3 className="mt-5 font-serif text-4xl text-[#fff7de] drop-shadow-[0_4px_16px_rgba(0,0,0,0.75)]">
-                  VIMUKTHI <span className="text-[#f0d18b]">&amp;</span> PIUMI
+                  KAVINDYA <span className="text-[#f0d18b]">&amp;</span> MINIDU
                 </h3>
                 <p className="mt-4 text-sm leading-7 text-[#f5e6c8]/80">
-                  "Love is patient, love is kind." Join us as we exchange vows in faith, gratitude, and joy.
+                  Join us as we celebrate our love, receive temple blessings, and begin our beautiful journey together.
                 </p>
                 <div className="mt-8 h-px w-28 bg-[#C9A227]/50" />
-                <p className="mt-5 text-xs uppercase tracking-[0.28em] text-[#C9A227]">May 30, 2026</p>
+                <p className="mt-5 text-xs uppercase tracking-[0.28em] text-[#C9A227]">July 04, 2026</p>
               </div>
 
               <motion.div
@@ -140,11 +140,11 @@ export default function CeremonyDetails() {
 
             <h2 className="mb-8 font-serif text-5xl font-light leading-snug text-[#f5e6c8] md:text-7xl">
               Wedding <br />
-              <span className="italic text-[#C9A227]">Ceremony</span>
+              <span className="italic text-[#C9A227]">Celebration</span>
             </h2>
 
             <p className="mb-12 text-lg leading-relaxed text-[#f5e6c8]/70 max-w-lg">
-              With immense joy in our hearts, we invite you to share our happiness as we exchange our vows before God. Join us for a sacred Christian celebration of faith, love, and lifelong commitment.
+              With immense joy in our hearts, we invite you to share our happiness as we celebrate our marriage. Join us for our Poruwa ceremony blessings and our wedding night function filled with love and joy.
             </p>
 
             <div className="flex flex-col gap-5">
@@ -208,8 +208,8 @@ export default function CeremonyDetails() {
                 <span className="w-6 h-[1px] bg-[#C9A227]"></span> Guest Notes
               </h4>
               <div className="space-y-2">
-                <p className="text-[#f5e6c8]/80 text-sm md:text-base"><span className="text-[#C9A227]">Dress Code:</span> Church Formal / Elegant Attire</p>
-                <p className="text-[#f5e6c8]/80 text-sm md:text-base"><span className="text-[#C9A227]">Reception:</span> Function starts at 11:30 AM at Sampath Banquet Hall</p>
+                <p className="text-[#f5e6c8]/80 text-sm md:text-base"><span className="text-[#C9A227]">Dress Code:</span> Formal / Elegant Attire</p>
+                <p className="text-[#f5e6c8]/80 text-sm md:text-base"><span className="text-[#C9A227]">Night Function:</span> Starts at 6:00 PM at Golden Flower Hotel, Hingurakgoda</p>
               </div>
             </motion.div>
 

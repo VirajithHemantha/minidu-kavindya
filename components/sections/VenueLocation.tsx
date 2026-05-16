@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, MapPin, Navigation, Sparkles } from 'lucide-react';
 
-const LIVE_LOCATION_URL = 'https://maps.app.goo.gl/pikUWZebfsNYjp4i6?g_st=iw';
-const FUNCTION_LOCATION_URL = 'https://maps.app.goo.gl/hPEbCMaPZywmpFQi7';
+const LIVE_LOCATION_URL = 'https://www.google.com/maps/search/Giritale+Wawe+Pansala';
+const FUNCTION_LOCATION_URL = 'https://www.google.com/maps/search/Hotel+Golden+Flower+Airport+Rd+Hingurakgoda';
 
 export default function VenueLocation() {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
@@ -50,7 +50,7 @@ export default function VenueLocation() {
           >
             <Sparkles className="h-4 w-4 text-[#c0784e]" />
             <span className="text-xs font-bold uppercase tracking-[0.24em] text-[#c0784e] sm:text-sm">
-              Church & Function Venues
+              Temple & Hotel Venues
             </span>
           </motion.div>
 
@@ -126,7 +126,7 @@ export default function VenueLocation() {
               >
                 <div>
                   <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#be7f56]">Live Location</p>
-                  <h4 className="mt-1 font-serif text-lg text-[#4d3732] sm:text-2xl">St. Joseph's Church - Gonawila</h4>
+                  <h4 className="mt-1 font-serif text-lg text-[#4d3732] sm:text-2xl">Giritale Wawe Pansala</h4>
                 </div>
                 <motion.div whileHover={{ scale: 1.08 }} className="flex h-11 w-11 items-center justify-center rounded-full bg-[#ca7c57] text-white shadow-md">
                   <Navigation className="h-5 w-5" />
@@ -148,11 +148,11 @@ export default function VenueLocation() {
               </div>
 
               <h3 className="font-serif text-3xl leading-tight text-[#4d3732] md:text-4xl">
-                St. Joseph's<br />Church - Gonawila
+                Giritale Wawe<br />Pansala
               </h3>
 
               <p className="mt-5 text-sm leading-relaxed text-[#7a6258] md:text-base">
-                We warmly invite you to join us at St. Joseph's Church - Gonawila for our holy wedding ceremony.
+                We warmly invite you to join us at Giritale Wawe Pansala, Giritale for our Poruwa ceremony blessings on July 02, 2026.
               </p>
 
               <a
@@ -161,21 +161,22 @@ export default function VenueLocation() {
                 rel="noopener noreferrer"
                 className="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#ca7c57] px-5 py-3 text-xs font-bold uppercase tracking-[0.2em] text-white shadow-[0_12px_28px_rgba(183,109,72,0.35)] transition-transform hover:scale-[1.02]"
               >
-                Open Live Location
+                Open Temple Location
                 <ExternalLink className="h-4 w-4" />
               </a>
 
               <div className="mt-6 rounded-2xl border border-[#ead2b9]/60 bg-white/75 p-4">
-                <p className="text-[10px] uppercase tracking-[0.2em] text-[#b78058]">Map Link</p>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-[#b78058]">Temple Location</p>
                 <p className="mt-2 break-all text-xs text-[#7a6258]">
-                  maps.app.goo.gl/pikUWZebfsNYjp4i6
+                  Giritale Wawe Pansala, Giritale
                 </p>
               </div>
 
               <div className="mt-5 rounded-2xl border border-[#ead2b9]/60 bg-white/75 p-4">
-                <p className="text-[10px] uppercase tracking-[0.2em] text-[#b78058]">Function Venue</p>
-                <h4 className="mt-2 font-serif text-xl text-[#4d3732]">Sampath Banquet Hall</h4>
-                <p className="mt-2 text-xs text-[#7a6258]">Function starts at 11:30 AM</p>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-[#b78058]">Hotel Venue</p>
+                <h4 className="mt-2 font-serif text-xl text-[#4d3732]">Golden Flower Hotel</h4>
+                <p className="mt-1 text-xs text-[#7a6258]">Airport Road, Hingurakgoda</p>
+                <p className="mt-2 text-xs text-[#7a6258]">Function starts at 6:00 PM on July 04, 2026</p>
                 <a
                   href={FUNCTION_LOCATION_URL}
                   target="_blank"
@@ -185,7 +186,7 @@ export default function VenueLocation() {
                   Open Hotel Location
                   <ExternalLink className="h-4 w-4" />
                 </a>
-                <p className="mt-3 break-all text-xs text-[#7a6258]">maps.app.goo.gl/hPEbCMaPZywmpFQi7</p>
+                <p className="mt-3 break-all text-xs text-[#7a6258]">Airport Road, Hingurakgoda</p>
               </div>
             </div>
           </motion.div>

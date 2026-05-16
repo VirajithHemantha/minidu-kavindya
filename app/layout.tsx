@@ -16,8 +16,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'VIMUKTHI & PIUMI Wedding',
-  description: 'Join us as we celebrate the blessed Christian union of VIMUKTHI and PIUMI on May 30, 2026.',
+  title: 'Kavindya & Minidu Wedding',
+  description: '2026 ජූලි 04 වන දින පැවැත්වෙන කාවින්ද්යා සහ මිනිඳු ගේ විවාහ මංගල්‍යය සඳහා ඔබ සැම සාදරයෙන් පිළිගනිමු.',
   generator: 'v0.app',
   icons: {
     icon: '/wedding-icon.png',

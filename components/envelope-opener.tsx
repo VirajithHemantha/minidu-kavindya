@@ -87,7 +87,7 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
             <div className="absolute left-1/2 top-0 h-[40rem] w-[24rem] -translate-x-1/2 bg-[radial-gradient(ellipse_at_top,rgba(255,240,200,0.16),rgba(255,240,200,0.04)_35%,transparent_72%)] blur-2xl" />
           </motion.div>
 
-          {/* Christian-inspired geometric pattern overlay */}
+          {/* Geometric pattern overlay */}
           <div className="absolute inset-0 opacity-[0.08] mix-blend-screen pointer-events-none">
             <div
               className="h-full w-full"
@@ -336,9 +336,9 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
                       className="translate-y-4"
                     >
                       <h3 className="font-serif text-[1.7rem] tracking-[0.14em] text-[#6d1424] drop-shadow-[0_2px_8px_rgba(0,0,0,0.18)] flex items-center justify-center gap-4 sm:gap-6">
-                        <span>VIMUKTHI</span>
+                        <span>KAVINDYA</span>
                         <span aria-hidden="true">&amp;</span>
-                        <span>PIUMI</span>
+                        <span>MINIDU</span>
                       </h3>
                       <div className="mt-4 flex items-center justify-center gap-3">
                         <span className="h-px w-10 bg-[#C9A227]/50" />
@@ -358,7 +358,7 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
                     }}
                     className="absolute left-1/2 top-[54%] z-20 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#f2d89c]/40 bg-[radial-gradient(circle_at_30%_30%,#a61d35_0%,#7a1226_55%,#5b0d1c_100%)] shadow-[0_10px_30px_rgba(90,13,28,0.45)]"
                   >
-                    <span className="font-serif text-lg text-[#f5e6c8]">V ✦ P</span>
+                    <span className="font-serif text-lg text-[#f5e6c8]">K ✦ M</span>
                   </motion.div>
 
                   {/* Hover sheen */}
@@ -396,7 +396,7 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
                     {/* Card frame */}
                     <div className="absolute inset-3 rounded-[18px] border border-[#C9A227]/25" />
                     <div className="absolute left-1/2 top-4 h-8 w-8 -translate-x-1/2 rounded-full border border-[#C9A227]/50 bg-white/70 text-center text-[10px] leading-8 text-[#8c6a16]">
-                      VP
+                      KM
                     </div>
 
                     {/* Card ornament */}
@@ -406,12 +406,12 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
                           Together with their families
                         </p>
                         <p className="text-[9px] leading-5 text-[#6a4d0d]">
-                          Bride, the loving daughter of<br />
-                          <span className="font-semibold">T H ANUSHA SHIRANTHI</span> (Mother) and <span className="font-semibold">G DAYAWANSA</span> (Father)
+                          Kavindya, the loving daughter of<br />
+                          <span className="font-semibold">SUSARA</span> (Mother) and <span className="font-semibold">KALUARACHCHILAGE PIYASUMANA</span> (Father)
                         </p>
                         <p className="text-[9px] leading-5 text-[#6a4d0d]">
-                          Groom, the loving son of<br />
-                          <span className="font-semibold">M HELAN DAMMIKA FERNANDO</span> (Mother) and <span className="font-semibold">W A NELSON MERIL FERNANDO</span> (Father)
+                          Minidu, the loving son of<br />
+                          <span className="font-semibold">WIJITHA</span> (Mother) and <span className="font-semibold">RANAWEERA RAJAPAKSHA</span> (Father)
                         </p>
                       </div>
 
@@ -422,15 +422,15 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
                       </div>
 
                       <h2 className="mt-5 font-serif text-4xl font-light tracking-[0.08em] text-[#6d1424]">
-                        VIMUKTHI
+                        KAVINDYA
                       </h2>
                       <p className="mt-1 font-serif text-lg italic text-[#b08a1f]">&</p>
                       <h2 className="font-serif text-4xl font-light tracking-[0.08em] text-[#6d1424]">
-                        PIUMI
+                        MINIDU
                       </h2>
 
                       <p className="mx-auto mt-5 max-w-[240px] text-sm leading-7 text-[#5f5146]">
-                        Invite you to witness a blessed Christian marriage ceremony filled with love, prayer, and grace.
+                        Invite you to celebrate our wedding night function and share in the joy of our marriage.
                       </p>
 
                       <div className="mt-6 flex items-center justify-center gap-3">
@@ -440,7 +440,8 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
                       </div>
 
                       <p className="mt-5 text-[11px] uppercase tracking-[0.36em] text-[#8c6a16]">
-                        May 30, 2026
+                        July 04, 2026 • 6:00 PM<br />
+                        <span className="text-[10px] tracking-[0.2em] text-[#6a4d0d] block mt-1">Golden Flower Hotel, Hingurakgoda</span>
                       </p>
                     </div>
                   </div>

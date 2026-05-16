@@ -37,11 +37,11 @@ export default function HeroSection() {
           transition={{ duration: 1 }}
           className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#f0daaa]/55 bg-black/30 px-5 py-2 backdrop-blur-sm"
         >
-          <Cross className="h-4 w-4 text-[#f0daaa]" />
+          <Sparkles className="h-4 w-4 text-[#f0daaa]" />
           <span className="text-[10px] font-semibold uppercase tracking-[0.32em] text-[#f0daaa] sm:text-xs">
-            Holy Matrimony
+            Wedding Celebration
           </span>
-          <Cross className="h-4 w-4 text-[#f0daaa]" />
+          <Sparkles className="h-4 w-4 text-[#f0daaa]" />
         </motion.div>
 
         <motion.h1
@@ -50,7 +50,7 @@ export default function HeroSection() {
           transition={{ duration: 1.1, delay: 0.1 }}
           className="font-serif text-4xl font-light leading-tight tracking-[0.08em] text-[#fff7e8] sm:text-6xl md:text-7xl lg:text-8xl"
         >
-          VIMUKTHI <span className="text-[#f0daaa]">&amp;</span> PIUMI
+          KAVINDYA <span className="text-[#f0daaa]">&amp;</span> MINIDU
         </motion.h1>
 
         <motion.p
@@ -59,7 +59,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.25 }}
           className="mt-5 max-w-3xl text-sm leading-relaxed text-[#f8ead0] sm:text-base md:text-lg"
         >
-          With grateful hearts before God, we invite you to witness our blessed Christian marriage ceremony and celebrate this joyful beginning with our families.
+          With joyful hearts, we invite you to celebrate our wedding night function and share in the happiness of our marriage.
         </motion.p>
 
         <motion.div
@@ -69,7 +69,7 @@ export default function HeroSection() {
           className="mt-8 rounded-3xl border border-[#f0daaa]/45 bg-black/35 px-6 py-5 backdrop-blur-sm sm:px-10"
         >
           <p className="text-xs uppercase tracking-[0.28em] text-[#f0daaa]">Wedding Date</p>
-          <p className="mt-2 font-serif text-2xl text-[#fff7e8] sm:text-3xl">May 30, 2026</p>
+          <p className="mt-2 font-serif text-2xl text-[#fff7e8] sm:text-3xl">July 04, 2026</p>
         </motion.div>
 
         <motion.div
