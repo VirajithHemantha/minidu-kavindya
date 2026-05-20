@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   description: '2026 ජූලි 04 වන දින පැවැත්වෙන කාවින්ද්යා සහ මිනිඳු ගේ විවාහ මංගල්‍යය සඳහා ඔබ සැම සාදරයෙන් පිළිගනිමු.',
   generator: 'v0.app',
   icons: {
-    icon: '/wedding-icon.png',
-    apple: '/wedding-icon.png',
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
   },
 }
 
