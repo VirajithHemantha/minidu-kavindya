@@ -181,7 +181,7 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
           />
 
           {/* Main content */}
-          <div className="relative z-20 flex min-h-screen flex-col items-center justify-center px-6">
+          <div className="relative z-20 flex min-h-screen flex-col items-center justify-center px-6 py-8 overflow-y-auto">
             {/* Intro label */}
             <motion.div
               initial={{ opacity: 0, y: 18 }}
@@ -245,7 +245,7 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
                 <motion.div
                   animate={isOpen ? { y: 56, opacity: 0 } : { y: 0, opacity: 1 }}
                   transition={{ duration: 0.9, ease: 'easeOut' }}
-                  className="relative h-[260px] w-[420px] overflow-hidden rounded-[28px] border border-[#C9A227]/25 bg-[linear-gradient(180deg,rgba(245,230,200,0.95)_0%,rgba(255,248,236,0.98)_100%)] shadow-[0_30px_80px_rgba(0,0,0,0.35)]"
+                  className="relative h-[220px] sm:h-[260px] w-[min(420px,90vw)] overflow-hidden rounded-[28px] border border-[#C9A227]/25 bg-[linear-gradient(180deg,rgba(245,230,200,0.95)_0%,rgba(255,248,236,0.98)_100%)] shadow-[0_30px_80px_rgba(0,0,0,0.35)]"
                 >
                   {/* Inner texture */}
                   <div className="absolute inset-0 opacity-[0.08]">
@@ -387,7 +387,7 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
                     delay: 0.72,
                     ease: [0.22, 1, 0.36, 1],
                   }}
-                  className="pointer-events-none absolute left-1/2 top-[56px] w-[360px] -translate-x-1/2"
+                  className="pointer-events-none absolute left-1/2 top-[40px] sm:top-[56px] w-[min(360px,88vw)] -translate-x-1/2"
                 >
                   <div className="relative overflow-hidden rounded-[24px] border border-[#C9A227]/35 bg-[linear-gradient(180deg,rgba(248,236,214,0.98)_0%,rgba(255,252,247,0.99)_100%)] px-8 py-10 shadow-[0_25px_60px_rgba(0,0,0,0.28)]">
                     {/* Card glow */}
