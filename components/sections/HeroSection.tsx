@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Cross, Heart, Sparkles } from 'lucide-react';
+import { Cross, Heart, Sparkles, Calendar, Clock, MapPin } from 'lucide-react';
 
 export default function HeroSection() {
   const { ref, inView } = useInView({ threshold: 0.05, triggerOnce: true });
@@ -14,7 +14,7 @@ export default function HeroSection() {
     >
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/IMG_0951.JPG.jpeg)' }}
+        style={{ backgroundImage: 'url("/r/WhatsApp%20Image%202026-05-21%20at%2002.32.50.jpeg")' }}
       />
 
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(20,17,28,0.42)_0%,rgba(20,17,28,0.58)_55%,rgba(20,17,28,0.82)_100%)]" />
@@ -50,7 +50,7 @@ export default function HeroSection() {
           transition={{ duration: 1.1, delay: 0.1 }}
           className="font-serif text-4xl font-light leading-tight tracking-[0.08em] text-[#fff7e8] sm:text-6xl md:text-7xl lg:text-8xl"
         >
-          KAVINDYA <span className="text-[#f0daaa]">&amp;</span> MINIDU
+          KAVINDYA <span className="text-[#f0daaa]">&amp;</span> MININDU
         </motion.h1>
 
         <motion.p
@@ -62,10 +62,77 @@ export default function HeroSection() {
           With joyful hearts, we invite you to celebrate our wedding night function and share in the happiness of our marriage.
         </motion.p>
 
+        {/* Temple Traditions Section */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.4 }}
+          className="mt-8 w-full max-w-2xl rounded-3xl border border-[#f0daaa]/45 bg-black/35 px-6 py-8 backdrop-blur-sm sm:px-10"
+        >
+          <div className="flex items-center justify-center gap-2 mb-3">
+            <Cross className="h-5 w-5 text-[#f0daaa]" />
+            <p className="text-xs uppercase tracking-[0.28em] text-[#f0daaa]">Temple Traditions & Offering</p>
+            <Cross className="h-5 w-5 text-[#f0daaa]" />
+          </div>
+          <p className="text-sm leading-relaxed text-[#f8ead0]">
+            You are welcome to join us for the temple traditions and offering (Danaya) to the Venerable Monks.
+          </p>
+          <div className="mt-5 space-y-3 text-left">
+            <div className="flex items-start gap-3">
+              <Calendar className="h-5 w-5 text-white mt-0.5 flex-shrink-0" />
+              <div>
+                <p className="text-sm font-semibold text-[#fff7e8]">July 02, 2026 (Thursday)</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <Clock className="h-5 w-5 text-white mt-0.5 flex-shrink-0" />
+              <p className="text-sm text-[#f8ead0]">08:00 AM - 01:00 PM</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <MapPin className="h-5 w-5 text-white mt-0.5 flex-shrink-0" />
+              <p className="text-sm text-[#f8ead0]">At the Temple</p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Wedding Night Function Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="mt-6 w-full max-w-2xl rounded-3xl border border-[#f0daaa]/45 bg-black/35 px-6 py-8 backdrop-blur-sm sm:px-10"
+        >
+          <div className="flex items-center justify-center gap-2 mb-3">
+            <Heart className="h-5 w-5 text-[#f0daaa] fill-current" />
+            <p className="text-xs uppercase tracking-[0.28em] text-[#f0daaa]">Wedding Night Function</p>
+            <Heart className="h-5 w-5 text-[#f0daaa] fill-current" />
+          </div>
+          <p className="text-sm leading-relaxed text-[#f8ead0]">
+            You are warmly invited to our wedding night celebration.
+          </p>
+          <div className="mt-5 space-y-3 text-left">
+            <div className="flex items-start gap-3">
+              <Calendar className="h-5 w-5 text-white mt-0.5 flex-shrink-0" />
+              <div>
+                <p className="text-sm font-semibold text-[#fff7e8]">July 04, 2026 (Saturday)</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <Clock className="h-5 w-5 text-white mt-0.5 flex-shrink-0" />
+              <p className="text-sm text-[#f8ead0]">06:00 PM - 11:00 PM</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <MapPin className="h-5 w-5 text-white mt-0.5 flex-shrink-0" />
+              <p className="text-sm text-[#f8ead0]">At the Reception Venue</p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Wedding Date Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1, delay: 0.6 }}
           className="mt-8 rounded-3xl border border-[#f0daaa]/45 bg-black/35 px-6 py-5 backdrop-blur-sm sm:px-10"
         >
           <p className="text-xs uppercase tracking-[0.28em] text-[#f0daaa]">Wedding Date</p>
@@ -75,7 +142,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 1, delay: 0.55 }}
+          transition={{ duration: 1, delay: 0.75 }}
           className="mt-8 flex items-center gap-3 text-[#f0daaa]"
         >
           <Sparkles className="h-4 w-4" />

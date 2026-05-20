@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Heart, MapPin, Sparkles } from 'lucide-react';
+import { Heart, MapPin, Sparkles, Calendar, Clock } from 'lucide-react';
 
 const LIVE_LOCATION_URL = 'https://www.google.com/maps/search/Hotel+Golden+Flower+Airport+Rd+Hingurakgoda';
 
@@ -39,15 +39,28 @@ export default function FooterSection() {
             <p className="mx-auto max-w-xl text-sm font-light leading-relaxed text-[#f5e6c8]/65">
               We look forward to sharing our joy and celebrating our wedding surrounded by the people we love most.
             </p>
-            <a
-              href={LIVE_LOCATION_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-7 inline-flex items-center justify-center gap-2 self-center rounded-full border border-[#C9A227]/45 bg-white/[0.04] px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#C9A227] transition-colors hover:bg-[#C9A227]/10"
-            >
-              <MapPin className="h-4 w-4" />
-              Golden Flower Hotel, Hingurakgoda
-            </a>
+            <div className="mt-8 flex flex-col items-center gap-4">
+              <a
+                href={LIVE_LOCATION_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-[#C9A227]/45 bg-white/[0.04] px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#C9A227] transition-colors hover:bg-[#C9A227]/10"
+              >
+                <MapPin className="h-4 w-4" />
+                Golden Flower Hotel, Hingurakgoda
+              </a>
+              <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 text-[#f5e6c8]/80 text-sm tracking-wide">
+                <span className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4 text-[#C9A227]" /> 
+                  July 04, 2026
+                </span>
+                <span className="hidden sm:inline text-[#C9A227]">|</span>
+                <span className="flex items-center gap-2">
+                  <Clock className="h-4 w-4 text-[#C9A227]" /> 
+                  06:00 PM
+                </span>
+              </div>
+            </div>
           </motion.div>
         </div>
 
@@ -68,7 +81,7 @@ export default function FooterSection() {
         <div className="flex flex-col items-center justify-between gap-4 px-4 text-center text-xs font-light tracking-[0.1em] text-[#C9A227] md:flex-row md:text-left">
           <div className="space-y-2">
             <p className="!text-[#C9A227]">
-              &copy; {new Date().getFullYear()} KAVINDYA & MINIDU. All rights reserved.
+              &copy; {new Date().getFullYear()} KAVINDYA & MININDU. All rights reserved.
             </p>
             <p className="!text-[#C9A227]">
               Design and created by <span className="!text-[#C9A227]">InviteMint</span> | Connect WhatsApp: <a href="https://wa.me/94707819074" target="_blank" rel="noopener noreferrer" className="!text-[#C9A227] hover:underline">+94 70 781 9074</a>

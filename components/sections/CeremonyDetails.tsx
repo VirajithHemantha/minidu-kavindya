@@ -14,13 +14,13 @@ export default function CeremonyDetails() {
   const detailGroups = [
     {
       key: 'temple',
-      title: 'Temple Ceremony',
-      timeLabel: 'Ceremony Date',
+      title: 'Temple Traditions & Offering',
+      timeLabel: 'Date & Time',
       timeValue: 'July 02, 2026',
-      timeSub: 'Poruwa & Temple Blessing',
-      venueLabel: 'Temple Venue',
-      venueValue: 'Giritale Wawe Pansala, Giritale',
-      venueSub: 'Polonnaruwa District',
+      timeSub: '08:00 AM - 01:00 PM',
+      venueLabel: 'Venue',
+      venueValue: 'At the Temple',
+      venueSub: '',
     },
     {
       key: 'function',
@@ -71,7 +71,7 @@ export default function CeremonyDetails() {
               <div className="absolute -inset-3 rounded-t-[210px] rounded-b-[35px] border border-[#C9A227]/40 hidden md:block" />
 
               <Image
-                src="/images/IMG_2529.JPG.jpeg"
+                src="/r/WhatsApp%20Image%202026-05-21%20at%2002.32.54.jpeg"
                 alt="Vimukthi and Piumi"
                 fill
                 className="object-cover"
@@ -90,13 +90,32 @@ export default function CeremonyDetails() {
                   <p className="text-[10px] uppercase tracking-[0.32em] text-[#f6dd9a] drop-shadow-[0_2px_10px_rgba(0,0,0,0.65)]">Blessed Union</p>
                 </div>
                 <h3 className="mt-5 font-serif text-4xl text-[#fff7de] drop-shadow-[0_4px_16px_rgba(0,0,0,0.75)]">
-                  KAVINDYA <span className="text-[#f0d18b]">&amp;</span> MINIDU
+                  KAVINDYA <span className="text-[#f0d18b]">&amp;</span> MININDU
                 </h3>
                 <p className="mt-4 text-sm leading-7 text-[#f5e6c8]/80">
                   Join us as we celebrate our love, receive temple blessings, and begin our beautiful journey together.
                 </p>
-                <div className="mt-8 h-px w-28 bg-[#C9A227]/50" />
-                <p className="mt-5 text-xs uppercase tracking-[0.28em] text-[#C9A227]">July 04, 2026</p>
+                
+                <div className="mt-8 space-y-4 w-full max-w-sm">
+                  {/* Date */}
+                  <div className="flex items-center justify-center gap-3">
+                    <div className="h-px flex-1 bg-[#C9A227]/30" />
+                    <span className="text-xs uppercase tracking-[0.28em] text-[#C9A227] font-medium">July 04, 2026</span>
+                    <div className="h-px flex-1 bg-[#C9A227]/30" />
+                  </div>
+                  
+                  {/* Time */}
+                  <div className="flex items-center justify-center gap-2 text-xs text-[#f5e6c8]/90">
+                    <Clock3 className="h-3.5 w-3.5 text-[#C9A227]" />
+                    <span className="tracking-[0.2em]">6:00 PM – 11:30 PM</span>
+                  </div>
+                  
+                  {/* Location */}
+                  <div className="flex items-center justify-center gap-2 text-xs text-[#f5e6c8]/90">
+                    <MapPin className="h-3.5 w-3.5 text-[#C9A227]" />
+                    <span className="tracking-[0.15em]">Golden Flower Hotel, Hingurakgoda</span>
+                  </div>
+                </div>
               </div>
 
               <motion.div
@@ -149,16 +168,21 @@ export default function CeremonyDetails() {
 
             <div className="flex flex-col gap-5">
               {detailGroups.map((group, index) => {
+                const isNight = group.key === 'function';
                 return (
                   <motion.div
                     key={group.key}
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
-                    whileHover={{ x: 10, backgroundColor: 'rgba(201,162,39,0.08)' }}
-                    className="group relative overflow-hidden rounded-2xl border border-[#C9A227]/25 bg-[linear-gradient(120deg,rgba(44,7,16,0.72)_0%,rgba(62,13,25,0.55)_100%)] p-5 shadow-lg backdrop-blur-md transition-all cursor-default"
+                    whileHover={{ x: 10, scale: isNight ? 1.02 : 1 }}
+                    className={`group relative overflow-hidden rounded-3xl border-2 p-6 shadow-xl backdrop-blur-md transition-all cursor-default ${
+                      isNight 
+                        ? 'border-[#D4AF37]/60 bg-[linear-gradient(135deg,rgba(212,175,55,0.25)_0%,rgba(212,175,55,0.15)_100%)] ring-1 ring-[#D4AF37]/30' 
+                        : 'border-[#C9A227]/15 bg-[linear-gradient(120deg,rgba(44,7,16,0.3)_0%,rgba(62,13,25,0.2)_100%)]'
+                    }`}
                   >
-                    <div className="absolute left-0 top-0 w-1 h-full bg-[#C9A227] scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300" />
+                    <div className={`absolute left-0 top-0 w-1.5 h-full transition-transform origin-bottom duration-300 ${isNight ? 'bg-[#D4AF37] scale-y-100' : 'bg-[#C9A227] scale-y-0 group-hover:scale-y-100'}`} />
 
                     <div className="mb-4">
                       <p className="text-xs uppercase tracking-[0.25em] text-[#C9A227]/70">{group.title} Details</p>

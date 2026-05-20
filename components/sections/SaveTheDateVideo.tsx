@@ -9,7 +9,6 @@ export default function SaveTheDateVideo() {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(true);
   const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
@@ -29,14 +28,6 @@ export default function SaveTheDateVideo() {
     } else {
       video.play().then(() => setIsPlaying(true)).catch(() => {});
     }
-  };
-
-  const toggleMute = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    const video = videoRef.current;
-    if (!video) return;
-    video.muted = !isMuted;
-    setIsMuted(!isMuted);
   };
 
   return (
@@ -107,7 +98,7 @@ export default function SaveTheDateVideo() {
             autoPlay
             loop
             playsInline
-            muted={isMuted}
+            muted
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
             onClick={togglePlay}
           />
@@ -118,18 +109,8 @@ export default function SaveTheDateVideo() {
             <div className="flex items-center justify-between w-full">
               <span className="inline-flex items-center gap-2 rounded-full bg-black/60 border border-white/20 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.2em] text-white backdrop-blur-md shadow-lg">
                 <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
-                Kavindya & Minidu
+                Kavindya & Minindu
               </span>
-
-              {isMuted && (
-                <button
-                  onClick={toggleMute}
-                  className="pointer-events-auto inline-flex items-center gap-2 rounded-full bg-[#C9A227] px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.18em] text-black shadow-lg hover:bg-[#b58f1b] transition-all hover:scale-105"
-                >
-                  <VolumeX className="h-3.5 w-3.5" />
-                  Tap to Unmute
-                </button>
-              )}
             </div>
 
             {/* Center: Big Play/Pause Button */}
@@ -161,20 +142,9 @@ export default function SaveTheDateVideo() {
                 )}
               </button>
 
-              <button
-                onClick={toggleMute}
-                className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-white hover:text-[#C9A227] transition-colors"
-              >
-                {isMuted ? (
-                  <>
-                    <VolumeX className="h-4 w-4 text-[#C9A227]" /> Muted
-                  </>
-                ) : (
-                  <>
-                    <Volume2 className="h-4 w-4 text-[#C9A227]" /> Sound On
-                  </>
-                )}
-              </button>
+              <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-white/60">
+                <Volume2 className="h-4 w-4 text-[#C9A227]" /> Website Audio
+              </span>
             </div>
           </div>
         </motion.div>

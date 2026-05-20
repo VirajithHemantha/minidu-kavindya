@@ -16,7 +16,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Kavindya & Minidu Wedding',
+  title: 'Kavindya & Minindu Wedding',
   description: '2026 ජූලි 04 වන දින පැවැත්වෙන කාවින්ද්යා සහ මිනිඳු ගේ විවාහ මංගල්‍යය සඳහා ඔබ සැම සාදරයෙන් පිළිගනිමු.',
   generator: 'v0.app',
   icons: {

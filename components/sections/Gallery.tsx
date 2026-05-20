@@ -13,30 +13,30 @@ export default function Gallery() {
   const galleryItems = [
     {
       id: 1,
-      title: 'Engagement',
+      title: 'Our First Met',
       description: 'The moment everything changed',
-      image: '/images/gallery-1.jpg',
+      image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.45.jpeg',
       size: 'large',
     },
     {
       id: 2,
-      title: 'Together',
+      title: 'Engagement',
       description: 'Building memories every day',
-      image: '/images/gallery-2.jpg',
+      image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.46.jpeg',
       size: 'medium',
     },
     {
       id: 3,
-      title: 'Adventure',
+      title: 'Pre-wedding Shoot',
       description: 'Exploring the world as one',
-      image: '/images/gallery-3.jpg',
+      image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.49.jpeg',
       size: 'medium',
     },
     {
       id: 4,
-      title: 'Love',
+      title: 'Together Forever',
       description: 'Forever starts now',
-      image: '/images/gallery-4.jpg',
+      image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.51.jpeg',
       size: 'large',
     },
   ];

@@ -10,6 +10,7 @@ import CountdownSection from '@/components/sections/CountdownSection';
 import GallerySection from '@/components/sections/GallerySection';
 import VenueLocation from '@/components/sections/VenueLocation';
 import RSVPSection from '@/components/sections/RSVPSection';
+import MemoryUploadSection from '@/components/sections/MemoryUploadSection';
 import BlessingsSection from '@/components/sections/BlessingsSection';
 import FooterSection from '@/components/sections/FooterSection';
 import MusicPlayer from '@/components/MusicPlayer';
@@ -37,6 +38,7 @@ export default function Home() {
           <CeremonyDetails />
           <CountdownSection />
           <GallerySection />
+          <MemoryUploadSection />
           <VenueLocation />
           <RSVPSection />
           <BlessingsSection />

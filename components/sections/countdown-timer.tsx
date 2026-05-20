@@ -12,7 +12,7 @@ type TimeLeft = {
 };
 
 export function CountdownTimer() {
-  const weddingDate = useMemo(() => new Date('2026-06-18T10:30:00').getTime(), []);
+  const weddingDate = useMemo(() => new Date('2026-07-04T18:00:00').getTime(), []);
 
   const getTimeLeft = (): TimeLeft => {
     const now = new Date().getTime();

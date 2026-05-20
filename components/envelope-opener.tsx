@@ -21,7 +21,7 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
     setTimeout(() => {
       setShowContent(true);
       onEnvelopeOpen();
-    }, 2600);
+    }, 8000);
   };
 
   const petals = Array.from({ length: 16 }).map((_, i) => ({
@@ -338,7 +338,7 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
                       <h3 className="font-serif text-[1.7rem] tracking-[0.14em] text-[#6d1424] drop-shadow-[0_2px_8px_rgba(0,0,0,0.18)] flex items-center justify-center gap-4 sm:gap-6">
                         <span>KAVINDYA</span>
                         <span aria-hidden="true">&amp;</span>
-                        <span>MINIDU</span>
+                        <span>MININDU</span>
                       </h3>
                       <div className="mt-4 flex items-center justify-center gap-3">
                         <span className="h-px w-10 bg-[#C9A227]/50" />
@@ -410,7 +410,7 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
                           <span className="font-semibold">SUSARA</span> (Mother) and <span className="font-semibold">KALUARACHCHILAGE PIYASUMANA</span> (Father)
                         </p>
                         <p className="text-[9px] leading-5 text-[#6a4d0d]">
-                          Minidu, the loving son of<br />
+                          Minindu, the loving son of<br />
                           <span className="font-semibold">WIJITHA</span> (Mother) and <span className="font-semibold">RANAWEERA RAJAPAKSHA</span> (Father)
                         </p>
                       </div>
@@ -426,7 +426,7 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
                       </h2>
                       <p className="mt-1 font-serif text-lg italic text-[#b08a1f]">&</p>
                       <h2 className="font-serif text-4xl font-light tracking-[0.08em] text-[#6d1424]">
-                        MINIDU
+                        MININDU
                       </h2>
 
                       <p className="mx-auto mt-5 max-w-[240px] text-sm leading-7 text-[#5f5146]">
