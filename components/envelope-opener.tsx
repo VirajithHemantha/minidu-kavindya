@@ -374,81 +374,9 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
                   />
                 </motion.div>
 
-                {/* Invitation card */}
-                <motion.div
-                  initial={{ y: 110, opacity: 0, scale: 0.96 }}
-                  animate={
-                    isOpen
-                      ? { y: -8, opacity: 1, scale: 1 }
-                      : { y: 110, opacity: 0, scale: 0.96 }
-                  }
-                  transition={{
-                    duration: 1.1,
-                    delay: 0.72,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                  className="pointer-events-none absolute left-1/2 top-[40px] sm:top-[56px] w-[min(360px,88vw)] -translate-x-1/2"
-                >
-                  <div className="relative overflow-hidden rounded-[24px] border border-[#C9A227]/35 bg-[linear-gradient(180deg,rgba(248,236,214,0.98)_0%,rgba(255,252,247,0.99)_100%)] px-8 py-10 shadow-[0_25px_60px_rgba(0,0,0,0.28)]">
-                    {/* Card glow */}
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(201,162,39,0.18),transparent_44%)]" />
-
-                    {/* Card frame */}
-                    <div className="absolute inset-3 rounded-[18px] border border-[#C9A227]/25" />
-                    <div className="absolute left-1/2 top-4 h-8 w-8 -translate-x-1/2 rounded-full border border-[#C9A227]/50 bg-white/70 text-center text-[10px] leading-8 text-[#8c6a16]">
-                      KM
-                    </div>
-
-                    {/* Card ornament */}
-                    <div className="relative text-center">
-                      <div className="space-y-2 mb-3">
-                        <p className="text-[9px] uppercase tracking-[0.28em] text-[#8c6a16]">
-                          Together with their families
-                        </p>
-                        <p className="text-[9px] leading-5 text-[#6a4d0d]">
-                          Kavindya, the loving daughter of<br />
-                          <span className="font-semibold">SUSARA</span> (Mother) and <span className="font-semibold">KALUARACHCHILAGE PIYASUMANA</span> (Father)
-                        </p>
-                        <p className="text-[9px] leading-5 text-[#6a4d0d]">
-                          Minindu, the loving son of<br />
-                          <span className="font-semibold">WIJITHA</span> (Mother) and <span className="font-semibold">RANAWEERA RAJAPAKSHA</span> (Father)
-                        </p>
-                      </div>
-
-                      <div className="mt-4 flex items-center justify-center gap-3">
-                        <span className="h-px w-10 bg-[#C9A227]/45" />
-                        <span className="text-[#C9A227]">❋</span>
-                        <span className="h-px w-10 bg-[#C9A227]/45" />
-                      </div>
-
-                      <h2 className="mt-5 font-serif text-4xl font-light tracking-[0.08em] text-[#6d1424]">
-                        KAVINDYA
-                      </h2>
-                      <p className="mt-1 font-serif text-lg italic text-[#b08a1f]">&</p>
-                      <h2 className="font-serif text-4xl font-light tracking-[0.08em] text-[#6d1424]">
-                        MININDU
-                      </h2>
-
-                      <p className="mx-auto mt-5 max-w-[240px] text-sm leading-7 text-[#5f5146]">
-                        Invite you to celebrate our wedding night function and share in the joy of our marriage.
-                      </p>
-
-                      <div className="mt-6 flex items-center justify-center gap-3">
-                        <span className="h-px w-10 bg-[#C9A227]/45" />
-                        <span className="text-[#C9A227]">✦</span>
-                        <span className="h-px w-10 bg-[#C9A227]/45" />
-                      </div>
-
-                      <p className="mt-5 text-[11px] uppercase tracking-[0.36em] text-[#8c6a16]">
-                        July 04, 2026 • 6:00 PM<br />
-                        <span className="text-[10px] tracking-[0.2em] text-[#6a4d0d] block mt-1">Golden Flower Hotel, Hingurakgoda</span>
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
               </motion.button>
 
-              {/* Instruction moved outside the envelope for better readability on mobile */}
+              {/* Instruction */}
               <motion.p
                 initial={{ opacity: 0, y: 10 }}
                 animate={!isOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -6 }}
@@ -459,6 +387,78 @@ export function EnvelopeOpener({ onEnvelopeOpen }: EnvelopeOpenerProps) {
               </motion.p>
             </motion.div>
           </div>
+
+          {/* Invitation Card — fixed overlay, centered on screen */}
+          <AnimatePresence>
+            {isOpen && (
+              <motion.div
+                key="invitation-card"
+                initial={{ opacity: 0, y: 80, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 1.1, delay: 0.72, ease: [0.22, 1, 0.36, 1] }}
+                className="fixed inset-0 z-30 flex items-center justify-center px-4 py-8 overflow-y-auto"
+                style={{ WebkitOverflowScrolling: 'touch' }}
+              >
+                <div className="relative w-full max-w-[360px] mx-auto overflow-hidden rounded-[24px] border border-[#C9A227]/35 bg-[linear-gradient(180deg,rgba(248,236,214,0.98)_0%,rgba(255,252,247,0.99)_100%)] px-6 py-8 sm:px-8 sm:py-10 shadow-[0_25px_60px_rgba(0,0,0,0.55)]">
+                  {/* Card glow */}
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(201,162,39,0.18),transparent_44%)]" />
+
+                  {/* Card frame */}
+                  <div className="absolute inset-3 rounded-[18px] border border-[#C9A227]/25" />
+                  <div className="absolute left-1/2 top-4 h-8 w-8 -translate-x-1/2 rounded-full border border-[#C9A227]/50 bg-white/70 text-center text-[10px] leading-8 text-[#8c6a16]">
+                    KM
+                  </div>
+
+                  {/* Card content */}
+                  <div className="relative text-center mt-6">
+                    <div className="space-y-2 mb-3">
+                      <p className="text-[9px] uppercase tracking-[0.28em] text-[#8c6a16]">
+                        Together with their families
+                      </p>
+                      <p className="text-[9px] leading-5 text-[#6a4d0d]">
+                        Kavindya, the loving daughter of<br />
+                        <span className="font-semibold">SUSARA</span> (Mother) and <span className="font-semibold">KALUARACHCHILAGE PIYASUMANA</span> (Father)
+                      </p>
+                      <p className="text-[9px] leading-5 text-[#6a4d0d]">
+                        Minindu, the loving son of<br />
+                        <span className="font-semibold">WIJITHA</span> (Mother) and <span className="font-semibold">RANAWEERA RAJAPAKSHA</span> (Father)
+                      </p>
+                    </div>
+
+                    <div className="mt-4 flex items-center justify-center gap-3">
+                      <span className="h-px w-10 bg-[#C9A227]/45" />
+                      <span className="text-[#C9A227]">❋</span>
+                      <span className="h-px w-10 bg-[#C9A227]/45" />
+                    </div>
+
+                    <h2 className="mt-4 font-serif text-3xl sm:text-4xl font-light tracking-[0.08em] text-[#6d1424]">
+                      KAVINDYA
+                    </h2>
+                    <p className="mt-1 font-serif text-lg italic text-[#b08a1f]">&</p>
+                    <h2 className="font-serif text-3xl sm:text-4xl font-light tracking-[0.08em] text-[#6d1424]">
+                      MININDU
+                    </h2>
+
+                    <p className="mx-auto mt-4 max-w-[240px] text-sm leading-7 text-[#5f5146]">
+                      Invite you to celebrate our wedding night function and share in the joy of our marriage.
+                    </p>
+
+                    <div className="mt-4 flex items-center justify-center gap-3">
+                      <span className="h-px w-10 bg-[#C9A227]/45" />
+                      <span className="text-[#C9A227]">✦</span>
+                      <span className="h-px w-10 bg-[#C9A227]/45" />
+                    </div>
+
+                    <p className="mt-4 text-[11px] uppercase tracking-[0.36em] text-[#8c6a16]">
+                      July 04, 2026 • 6:00 PM<br />
+                      <span className="text-[10px] tracking-[0.2em] text-[#6a4d0d] block mt-1">Golden Flower Hotel, Hingurakgoda</span>
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
 
         </motion.section>
       )}
