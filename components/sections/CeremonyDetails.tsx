@@ -14,12 +14,12 @@ export default function CeremonyDetails() {
   const detailGroups = [
     {
       key: 'temple',
-      title: 'Temple Traditions & Offering',
+      title: 'Temple Traditions & Almsgiving',
       timeLabel: 'Date & Time',
       timeValue: 'July 02, 2026',
       timeSub: '08:00 AM - 01:00 PM',
       venueLabel: 'Venue',
-      venueValue: 'At the Temple',
+      venueValue: 'At Giritale Lake Temple',
       venueSub: '',
     },
     {
@@ -163,7 +163,7 @@ export default function CeremonyDetails() {
             </h2>
 
             <p className="mb-12 text-lg leading-relaxed text-[#f5e6c8]/70 max-w-lg">
-              With immense joy in our hearts, we invite you to share our happiness as we celebrate our marriage. Join us for our Poruwa ceremony blessings and our wedding night function filled with love and joy.
+              With immense joy in our hearts, we invite you to share our happiness as we celebrate our marriage. Join us for our wedding night function filled with love and joy.
             </p>
 
             <div className="flex flex-col gap-5">
@@ -232,7 +232,7 @@ export default function CeremonyDetails() {
                 <span className="w-6 h-[1px] bg-[#C9A227]"></span> Guest Notes
               </h4>
               <div className="space-y-2">
-                <p className="text-[#f5e6c8]/80 text-sm md:text-base"><span className="text-[#C9A227]">Dress Code:</span> Formal / Elegant Attire</p>
+                <p className="text-[#f5e6c8]/80 text-sm md:text-base"><span className="text-[#C9A227]">Dress Code:</span> Indian type (without red)</p>
                 <p className="text-[#f5e6c8]/80 text-sm md:text-base"><span className="text-[#C9A227]">Night Function:</span> Starts at 6:00 PM at Golden Flower Hotel, Hingurakgoda</p>
               </div>
             </motion.div>

@@ -71,11 +71,11 @@ export default function HeroSection() {
         >
           <div className="flex items-center justify-center gap-2 mb-3">
             <Cross className="h-5 w-5 text-[#f0daaa]" />
-            <p className="text-xs uppercase tracking-[0.28em] text-[#f0daaa]">Temple Traditions & Offering</p>
+            <p className="text-xs uppercase tracking-[0.28em] text-[#f0daaa]">Temple Traditions & Almsgiving</p>
             <Cross className="h-5 w-5 text-[#f0daaa]" />
           </div>
           <p className="text-sm leading-relaxed text-[#f8ead0]">
-            You are welcome to join us for the temple traditions and offering (Danaya) to the Venerable Monks.
+            You are welcome to join us for the temple traditions and almsgiving (Danaya) to the Venerable Monks.
           </p>
           <div className="mt-5 space-y-3 text-left">
             <div className="flex items-start gap-3">
@@ -90,7 +90,7 @@ export default function HeroSection() {
             </div>
             <div className="flex items-start gap-3">
               <MapPin className="h-5 w-5 text-white mt-0.5 flex-shrink-0" />
-              <p className="text-sm text-[#f8ead0]">At the Temple</p>
+              <p className="text-sm text-[#f8ead0]">At Giritale Lake Temple</p>
             </div>
           </div>
         </motion.div>
@@ -123,7 +123,7 @@ export default function HeroSection() {
             </div>
             <div className="flex items-start gap-3">
               <MapPin className="h-5 w-5 text-white mt-0.5 flex-shrink-0" />
-              <p className="text-sm text-[#f8ead0]">At the Reception Venue</p>
+              <p className="text-sm text-[#f8ead0]">At Golden Flower Hotel</p>
             </div>
           </div>
         </motion.div>
