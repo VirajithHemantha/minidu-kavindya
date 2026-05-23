@@ -13,6 +13,8 @@ const galleryItems = [
   { src: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.51.jpeg', width: 'w-[170px] sm:w-[240px] md:w-[340px]', height: 'h-[320px] md:h-[480px]', yOffset: 'translate-y-6' },
   { src: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.52.jpeg', width: 'w-[210px] sm:w-[300px] md:w-[440px]', height: 'h-[400px] md:h-[580px]', yOffset: '-translate-y-12' },
   { src: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.53.jpeg', width: 'w-[180px] sm:w-[250px] md:w-[380px]', height: 'h-[360px] md:h-[500px]', yOffset: 'translate-y-4' },
+  { src: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.53%20(1).jpeg', width: 'w-[190px] sm:w-[260px] md:w-[380px]', height: 'h-[350px] md:h-[520px]', yOffset: '-translate-y-6' },
+  { src: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.54%20-%20Copy.jpeg', width: 'w-[160px] sm:w-[220px] md:w-[300px]', height: 'h-[300px] md:h-[420px]', yOffset: 'translate-y-8' },
 ];
 
 // Duplicate items multiple times to ensure a seamless infinite scroll

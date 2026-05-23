@@ -5,14 +5,18 @@ import { motion } from 'framer-motion';
 import { viewportSettings } from '@/lib/animations';
 
 export function PhotoGallery() {
-  // Placeholder gallery items - in real usage, these would be actual images
   const galleryItems = [
-    { id: 1, title: 'First Meeting', category: 'Memories' },
-    { id: 2, title: 'Engagement', category: 'Moments' },
-    { id: 3, title: 'Adventures', category: 'Travel' },
-    { id: 4, title: 'Celebrations', category: 'Joy' },
-    { id: 5, title: 'Quiet Times', category: 'Love' },
-    { id: 6, title: 'Together', category: 'Us' },
+    { id: 1, title: 'Moment One', category: 'Memories', image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.45.jpeg' },
+    { id: 2, title: 'Moment Two', category: 'Moments', image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.46.jpeg' },
+    { id: 3, title: 'Moment Three', category: 'Celebrations', image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.49.jpeg' },
+    { id: 4, title: 'Moment Four', category: 'Joy', image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.50.jpeg' },
+    { id: 5, title: 'Moment Five', category: 'Love', image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.51.jpeg' },
+    { id: 6, title: 'Moment Six', category: 'Us', image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.52%20(1).jpeg' },
+    { id: 7, title: 'Moment Seven', category: 'Memories', image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.52.jpeg' },
+    { id: 8, title: 'Moment Eight', category: 'Moments', image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.53%20(1).jpeg' },
+    { id: 9, title: 'Moment Nine', category: 'Celebrations', image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.53.jpeg' },
+    { id: 10, title: 'Moment Ten', category: 'Love', image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.54%20-%20Copy.jpeg' },
+    { id: 11, title: 'Moment Eleven', category: 'Us', image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.54.jpeg' },
   ];
 
   const containerVariants = {
@@ -82,8 +86,13 @@ export function PhotoGallery() {
               }}
               className="group relative overflow-hidden rounded-lg aspect-square cursor-pointer"
             >
-              {/* Image Placeholder with Gradient */}
-              <div className="relative w-full h-full bg-gradient-to-br from-gold/10 via-champagne to-rose-accent/10 overflow-hidden">
+              {/* Image with Background */}
+              <div className="relative w-full h-full overflow-hidden">
+                <img 
+                  src={item.image} 
+                  alt={item.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
                 {/* Cinematic Overlay */}
                 <motion.div
                   initial={{ opacity: 0 }}

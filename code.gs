@@ -1,6 +1,6 @@
 function doPost(e) {
   try {
-    var spreadsheetId = '1rRXSwHlgJbFhVVsCGf1CWLzDH4JcWOcDp0zyZJmDJ58';
+    var spreadsheetId = '1gYYoFgUHyvUUx-g_o0ddzpoykR81nRWkBo0KPreL2m8';
     var ss = SpreadsheetApp.openById(spreadsheetId);
 
     var body = e && e.postData && e.postData.contents ? e.postData.contents : '{}';
@@ -54,4 +54,8 @@ function doPost(e) {
       .createTextOutput(JSON.stringify({ success: false, error: String(err) }))
       .setMimeType(ContentService.MimeType.JSON);
   }
+}
+
+function doGet(e) {
+  return ContentService.createTextOutput("Wedding forms endpoint is active and waiting for submissions!");
 }

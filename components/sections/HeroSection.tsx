@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Cross, Heart, Sparkles, Calendar, Clock, MapPin } from 'lucide-react';
+import { Flower2, Heart, Sparkles, Calendar, Clock, MapPin } from 'lucide-react';
 
 export default function HeroSection() {
   const { ref, inView } = useInView({ threshold: 0.05, triggerOnce: true });
@@ -70,12 +70,12 @@ export default function HeroSection() {
           className="mt-8 w-full max-w-2xl rounded-3xl border border-[#f0daaa]/45 bg-black/35 px-6 py-8 backdrop-blur-sm sm:px-10"
         >
           <div className="flex items-center justify-center gap-2 mb-3">
-            <Cross className="h-5 w-5 text-[#f0daaa]" />
+            <Flower2 className="h-5 w-5 text-[#f0daaa]" />
             <p className="text-xs uppercase tracking-[0.28em] text-[#f0daaa]">Temple Traditions & Almsgiving</p>
-            <Cross className="h-5 w-5 text-[#f0daaa]" />
+            <Flower2 className="h-5 w-5 text-[#f0daaa]" />
           </div>
           <p className="text-sm leading-relaxed text-[#f8ead0]">
-            You are welcome to join us for the temple traditions and almsgiving (Danaya) to the Venerable Monks.
+            The temple traditions and almsgiving (Danaya) to the Venerable Monks.
           </p>
           <div className="mt-5 space-y-3 text-left">
             <div className="flex items-start gap-3">
