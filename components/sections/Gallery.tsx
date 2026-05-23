@@ -39,27 +39,6 @@ export default function Gallery() {
       image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.51.jpeg',
       size: 'large',
     },
-    {
-      id: 5,
-      title: 'Beautiful Moments',
-      description: 'Captured in time, cherished forever',
-      image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.53.jpeg',
-      size: 'medium',
-    },
-    {
-      id: 6,
-      title: 'Joy & Celebration',
-      description: 'Love surrounded by those we adore',
-      image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.53%20%281%29.jpeg',
-      size: 'medium',
-    },
-    {
-      id: 7,
-      title: 'Special Moments',
-      description: 'Creating memories that last a lifetime',
-      image: '/r/WhatsApp%20Image%202026-05-21%20at%2002.32.54%20-%20Copy.jpeg',
-      size: 'large',
-    },
   ];
 
   const containerVariants = {
